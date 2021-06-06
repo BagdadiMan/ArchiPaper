@@ -19,6 +19,7 @@ import ContentRoutes from "../../ContentRoutes.js";
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import RecentActorsIcon from '@material-ui/icons/RecentActors';
 
+import presentationTemplate from './presentationTemplate.pptx';
 import Image from "./background.gif";
 
 const styles = {
@@ -34,6 +35,13 @@ const Main = props => {
   const preventDefault = () => {
     alert("Zohar");
   };
+
+  const downloadPresentationTemplate = () => {
+    var a = document.createElement("a");
+    a.href = presentationTemplate;
+    a.setAttribute("download", "Template.pptx");
+    a.click();
+  }  
 
   return (
     <div id="main">
@@ -58,7 +66,7 @@ const Main = props => {
           Tech Picks
         </Button>
         <Button
-          onClick={() => props.setContent(null)}
+          onClick={downloadPresentationTemplate}
           variant="contained"
           className="tab-button"
           startIcon={<SlideshowIcon />}

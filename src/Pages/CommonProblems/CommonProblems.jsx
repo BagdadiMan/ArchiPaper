@@ -2,6 +2,7 @@ import React from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import problems from './CommonProblems';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -13,10 +14,8 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const CommonProblems = (props) => { 
+const CommonProblems = () => { 
     const classes = useStyles();
-
-    const {problems} = props;
 
     return (
         <div className={classes.root}>

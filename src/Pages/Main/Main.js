@@ -16,6 +16,8 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import WarningIcon from "@material-ui/icons/Warning";
 import ComputerIcon from "@material-ui/icons/Computer";
 import ContentRoutes from "../../ContentRoutes.js";
+import SlideshowIcon from "@material-ui/icons/Slideshow";
+import RecentActorsIcon from '@material-ui/icons/RecentActors';
 
 import Image from "./background.gif";
 
@@ -48,6 +50,7 @@ const Main = props => {
           תקלות נפוצות
         </Button>
         <Button
+          onClick={() => props.setContent(null)}
           variant="contained"
           className="tab-button"
           startIcon={<ComputerIcon />}
@@ -55,11 +58,20 @@ const Main = props => {
           Tech Picks
         </Button>
         <Button
+          onClick={() => props.setContent(null)}
           variant="contained"
           className="tab-button"
-          startIcon={<DeleteIcon />}
+          startIcon={<SlideshowIcon />}
         >
-          כפתור
+          פורמט הצגות
+        </Button>
+        <Button
+          onClick={() => props.setContent(null)}
+          variant="contained"
+          className="tab-button"
+          startIcon={<RecentActorsIcon />}
+        >
+         הצוות
         </Button>
       </Paper>
     </div>

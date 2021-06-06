@@ -7,6 +7,7 @@ import problems from './CommonProblems';
 const useStyles = makeStyles((theme) => ({
     root: {
       width: '100%',
+      height: '100%'
     },
     heading: {
       fontSize: theme.typography.pxToRem(17),

@@ -1,4 +1,6 @@
 #content {
-    width: 100%;
+    width: 90%;
     display: flex;
+    height: 100%;
+    align-items: center
 }

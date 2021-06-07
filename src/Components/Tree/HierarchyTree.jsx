@@ -3,7 +3,7 @@ import './HierarchyTree.css'
 
 import ReactFlow, { addEdge, MiniMap, Controls } from 'react-flow-renderer';
 
-const clickableStyle = {pointerEvents:'all', cursor:'pointer'};
+const clickableStyle = {pointerEvents:'all', cursor:'pointer', fontWeight: '700', color: "blue"};
 const initialElements = [
     { 
         id: 'נועה', 

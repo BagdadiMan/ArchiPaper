@@ -11,6 +11,9 @@
   width: 20vw;
   background-color: white;
   color: black;
+  margin-right: 5%;
+  margin-right: 5%;
+  min-width: 20%;
 }
 
 #main .tab-button .MuiButton-label {
@@ -39,4 +42,6 @@
     box-shadow: unset;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    overflow-x: scroll;
 }

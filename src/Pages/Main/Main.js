@@ -57,14 +57,14 @@ const Main = props => {
         >
           תקלות נפוצות
         </Button>
-        <Button
+       {/*  <Button
           onClick={() => props.setContent(null)}
           variant="contained"
           className="tab-button"
           startIcon={<ComputerIcon />}
         >
           Tech Picks
-        </Button>
+        </Button> */}
         <Button
           onClick={downloadPresentationTemplate}
           variant="contained"
@@ -73,14 +73,30 @@ const Main = props => {
         >
           פורמט הצגות
         </Button>
-        <Button
+       {/*  <Button
           onClick={() => props.setContent(null)}
           variant="contained"
           className="tab-button"
           startIcon={<RecentActorsIcon />}
         >
          הצוות
+        </Button> */}
+       {/*  <Button
+          onClick={() => props.setContent(null)}
+          variant="contained"
+          className="tab-button"
+          startIcon={<RecentActorsIcon />}
+        >
+         מערכות
         </Button>
+        <Button
+          onClick={() => props.setContent(null)}
+          variant="contained"
+          className="tab-button"
+          startIcon={<RecentActorsIcon />}
+        >
+         מערכות
+        </Button> */}
       </Paper>
     </div>
   );

@@ -6,7 +6,7 @@ import problems from './CommonProblems';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      width: '100%',
+      width: '90%',
       height: '100%'
     },
     heading: {
@@ -27,7 +27,7 @@ const CommonProblems = () => {
                     <Typography className={classes.heading}>{x.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>{x.content}</Typography>
+                    <Typography style={{textAlign:'start'}}>{x.content}</Typography>
                 </AccordionDetails>
             </Accordion>)}
         </div>

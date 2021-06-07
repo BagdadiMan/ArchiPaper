@@ -95,6 +95,14 @@ const Main = () => {
           >
             פורמט הצגות
           </Button>
+          <Button
+            onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
+            variant="contained"
+            className="tab-button"
+            startIcon={<WarningIcon fontSize={"large"} />}
+          >
+            עץ מוצר
+          </Button>
           {/*<Button
             onClick={() => setContentRoute(null)}
             variant="contained"

@@ -352,7 +352,7 @@ const HierarchyTree = () => {
             defaultZoom={1.5} 
             minZoom={0.8} 
             maxZoom={1.5}
-            onNodeDoubleClick={onDoubleClick}
+            onElementClick={onDoubleClick}
             nodesDraggable={false}
         >
             <Controls showInteractive={false}/>

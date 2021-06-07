@@ -27,7 +27,11 @@ const styles = {
     backgroundImage: `url(${Image})`,
     height: "40vh",
     borderRadius: "0px 0px 20px 20px",
-    backgroundSize: "cover"
+    backgroundSize: "cover",
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    display: 'flex'
   }
 };
 
@@ -46,7 +50,7 @@ const Main = props => {
   return (
     <div id="main">
       <Paper style={styles.paperContainer}>
-        <Typography color="primary">כותרת</Typography>
+        <Typography className='title'>רסיסי לילה</Typography>
       </Paper>
       <Paper className="main-tabs" style={{ backgroundColor: "transparent" }}>
         <Button

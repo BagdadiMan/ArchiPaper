@@ -45,3 +45,8 @@
     width: 100%;
     overflow-x: scroll;
 }
+
+#main .title {
+  color: white;
+  font-size: 10vw;
+}

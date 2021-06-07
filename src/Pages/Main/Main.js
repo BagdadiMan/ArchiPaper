@@ -95,7 +95,7 @@ const Main = () => {
           >
             פורמט הצגות
           </Button>
-          <Button
+          {/*<Button
             onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
             variant="contained"
             className="tab-button"
@@ -103,7 +103,7 @@ const Main = () => {
           >
             עץ מוצר
           </Button>
-          {/*<Button
+          <Button
             onClick={() => setContentRoute(null)}
             variant="contained"
             className="tab-button"

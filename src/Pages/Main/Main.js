@@ -47,6 +47,7 @@ const Main = () => {
   const ref = useRef(null);
 
   const downloadPresentationTemplate = () => {
+    setContentRoute(null)
     var a = document.createElement("a");
     a.href = presentationTemplate;
     a.setAttribute("download", "Template.pptx");

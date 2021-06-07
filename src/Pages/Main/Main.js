@@ -18,7 +18,7 @@ import ComputerIcon from "@material-ui/icons/Computer";
 import ContentRoutes from "../../ContentRoutes.js";
 import SlideshowIcon from "@material-ui/icons/Slideshow";
 import RecentActorsIcon from '@material-ui/icons/RecentActors';
-
+import CloudIcon from '@material-ui/icons/Cloud';
 import presentationTemplate from './presentationTemplate.pptx';
 import Image from "./background.gif";
 
@@ -57,14 +57,14 @@ const Main = props => {
         >
           תקלות נפוצות
         </Button>
-       {/*  <Button
-          onClick={() => props.setContent(null)}
+         <Button
+          onClick={() => window.open("https://drive.google.com/drive/folders/1dzMq9IlfoiEwfWXEqZOIUW5zJNtiQwgg?usp=sharing")}
           variant="contained"
           className="tab-button"
-          startIcon={<ComputerIcon />}
+          startIcon={<CloudIcon />}
         >
-          Tech Picks
-        </Button> */}
+          מדריכי Openshift
+        </Button>
         <Button
           onClick={downloadPresentationTemplate}
           variant="contained"

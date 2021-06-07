@@ -25,6 +25,7 @@ import Image from "./background.gif";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import Content from "../../Components/Content/Content.js";
+import AccountTreeIcon from '@material-ui/icons/AccountTree';
 
 const styles = {
   paperContainer: {
@@ -99,7 +100,7 @@ const Main = () => {
             onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
             variant="contained"
             className="tab-button"
-            startIcon={<WarningIcon fontSize={"large"} />}
+            startIcon={<AccountTreeIcon fontSize={"large"} />}
           >
             עץ מוצר
           </Button>

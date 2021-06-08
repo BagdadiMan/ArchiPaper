@@ -27,7 +27,7 @@ const CommonProblems = () => {
                     <Typography className={classes.heading}>{x.title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography style={{textAlign:'start'}}>{x.content}</Typography>
+                    <Typography style={{textAlign:'start', 'white-space': 'pre-line'}}>{x.content}</Typography>
                 </AccordionDetails>
             </Accordion>)}
         </div>

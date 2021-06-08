@@ -207,7 +207,7 @@ const initialElements = [
     },
     {
         id: 'חמל1',
-        data: { label: 'חמ"ל'},
+        data: { label: 'תחנת משטרה'},
         position: { x: 1200, y: 250 },
         style: { width: 100}
     },
@@ -225,7 +225,7 @@ const initialElements = [
     },
     {
         id: 'חמל2',
-        data: { label: <span style={clickableStyle}>חמ"ל</span>, ref: 'http://alpha-da-git-tmzapp2.apps.openforce.openforce.biz/'},
+        data: { label: <span style={clickableStyle}>תחנת משטרה</span>, ref: 'http://alpha-da-git-tmzapp2.apps.openforce.openforce.biz/'},
         position: { x: 1325, y: 250 },
         style: { width: 100}
     },
@@ -243,7 +243,7 @@ const initialElements = [
     },
     {
         id: 'חמל3',
-        data: { label: 'חמ"ל'},
+        data: { label: 'תחנת משטרה'},
         position: { x: 1450, y: 250 },
         style: { width: 100}
     },

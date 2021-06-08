@@ -28,6 +28,7 @@ import Content from "../../Components/Content/Content.js";
 import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import GroupIcon from "@material-ui/icons/Group";
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const styles = {
   paperContainer: {
@@ -79,6 +80,22 @@ const Main = () => {
             startIcon={<WarningIcon fontSize={"large"} />}
           >
             תקלות נפוצות
+          </Button>          
+          <Button
+            onClick={downloadPresentationTemplate}
+            variant="contained"
+            className="tab-button"
+            startIcon={<SlideshowIcon />}
+          >
+            פורמט הצגות
+          </Button>
+          <Button
+            onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
+            variant="contained"
+            className="tab-button"
+            startIcon={<AccountTreeIcon fontSize={"large"} />}
+          >            
+            עץ מוצר
           </Button>
           <Button
             onClick={() =>
@@ -93,20 +110,16 @@ const Main = () => {
             מדריכי Openshift
           </Button>
           <Button
-            onClick={downloadPresentationTemplate}
+            onClick={() =>
+              window.open(
+                "https://forms.gle/25GwaS94Mj9WLmMc9"
+              )
+            }
             variant="contained"
             className="tab-button"
-            startIcon={<SlideshowIcon />}
+            startIcon={<DescriptionIcon />}
           >
-            פורמט הצגות
-          </Button>
-          <Button
-            onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
-            variant="contained"
-            className="tab-button"
-            startIcon={<AccountTreeIcon fontSize={"large"} />}
-          >
-            עץ מוצר
+            תמיכה טכנית Openshift
           </Button>
           {/*    <Button
             onClick={() => setContentRoute(ContentRoutes.Team)}
@@ -131,7 +144,7 @@ const Main = () => {
             className="tab-button"
             startIcon={<PhotoLibraryIcon />}
           >
-            Tech Pics
+            גלריה
           </Button>
         </div>
         <Avatar onClick={() => scroll(-50)} className="arrow">

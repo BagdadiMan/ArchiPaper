@@ -152,68 +152,50 @@ const initialElements = [
         style: { width: 100}
     },
     {
-        id: 'da1',
-        data: { label: 'Data Analyst'},
+        id: 'חמל1',
+        data: { label: 'תחנת משטרה'},
         position: { x: 800, y: 250 },
         style: { width: 100}
     }, 
     {
-        id: 'de1',
-        data: { label: 'Data Engineer'},
+        id: 'אפליקציה1',
+        data: { label: 'אפליקציה לשוטר'},
         position: { x: 800, y: 293 },
         style: { width: 100}
     },
     {
-        id: 'shob1',
-        data: { label: 'שו"ב'},
-        position: { x: 800, y: 337 },
-        style: { width: 100}
-    },
-    {
-        id: 'da2',
-        data: { label: 'Data Analyst'},
+        id: 'חמל2',
+        data: { label: 'תחנת משטרה'},
         position: { x: 925, y: 250 },
         style: { width: 100}
     },
     {
-        id: 'de2',
-        data: { label: 'Data Engineer'},
+        id: 'אפליקציה2',
+        data: { label: 'אפליקציה לשוטר'},
         position: { x: 925, y: 293 },
-        style: { width: 100}
-    },
-    {
-        id: 'shob2',
-        data: { label: 'שו"ב'},
-        position: { x: 925, y: 337 },
         style: { width: 100}
     },
     {
         id: 'da3',
         data: { label: 'Data Analyst'},
-        position: { x: 1050, y: 250 },
+        position: { x: 1450, y: 250 },
         style: { width: 100}
     },
-    {
-        id: 'de3',
-        data: { label: 'Data Engineer'},
+    { 
+        id: 'אפליקציה3',
+        data: { label: 'אפליקציה לשוטר'},
         position: { x: 1050, y: 293 },
         style: { width: 100}
     },
     {
-        id: 'shob3',
-        data: { label: 'שו"ב'},
-        position: { x: 1050, y: 337 },
-        style: { width: 100}
-    },
-    {
-        id: 'חמל1',
-        data: { label: 'חמ"ל'},
+        id: 'da1',
+        data: { label: 'Data Analyst'},
         position: { x: 1200, y: 250 },
         style: { width: 100}
     },
     {
-        id: 'אפליקציה1',
-        data: { label: 'אפליקציה לשוטר'},
+        id: 'de1',
+        data: { label: 'Data Engineer'},
         position: { x: 1200, y: 293 },
         style: { width: 100}
     },
@@ -224,32 +206,33 @@ const initialElements = [
         style: { width: 100}
     },
     {
-        id: 'חמל2',
-        data: { label: <span style={clickableStyle}>חמ"ל</span>, ref: 'http://alpha-da-git-tmzapp2.apps.openforce.openforce.biz/'},
+        id: 'da2',
+        data: { label: <span style={clickableStyle}>Data Analyst</span>, ref: 'http://alpha-da-git-tmzapp2.apps.openforce.openforce.biz/'},
         position: { x: 1325, y: 250 },
         style: { width: 100}
     },
     {
-        id: 'אפליקציה2',
-        data: { label: 'אפליקציה לשוטר'},
+        id: 'de2',
+        data: { label: 'Data Engineer'},
         position: { x: 1325, y: 293 },
         style: { width: 100}
     },
     {
-        id: 'מפה2',
+        id: 'מהפ2',
         data: { label: <span style={clickableStyle}>מפה</span>, ref: 'http://alpha-maps-git-tmzmap2.apps.openforce.openforce.biz/'},
         position: { x: 1325, y:  336},
         style: { width: 100},
     },
     {
         id: 'חמל3',
-        data: { label: 'חמ"ל'},
-        position: { x: 1450, y: 250 },
+        data: { label: 'תחנת משטרה'},
+        position: { x: 1050, y: 250 },
         style: { width: 100}
     },
     {
-        id: 'אפליקציה3',
-        data: { label: 'אפליקציה לשוטר'},
+       
+        id: 'de3',
+        data: { label: 'Data Engineer'},
         position: { x: 1450, y: 293 },
         style: { width: 100}
     },

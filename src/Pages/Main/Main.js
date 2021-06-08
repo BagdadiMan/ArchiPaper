@@ -25,7 +25,9 @@ import Image from "./background.gif";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import Content from "../../Components/Content/Content.js";
-import AccountTreeIcon from '@material-ui/icons/AccountTree';
+import AccountTreeIcon from "@material-ui/icons/AccountTree";
+import GroupIcon from "@material-ui/icons/Group";
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import DescriptionIcon from '@material-ui/icons/Description';
 
 const styles = {
@@ -37,18 +39,17 @@ const styles = {
     justifyContent: "flex-start",
     textAlign: "center",
     display: "flex",
-    flexDirection: 'column',
-    alignItems: 'center'
+    flexDirection: "column",
+    alignItems: "center"
   }
 };
 
 const Main = () => {
-
   const [contentRoute, setContentRoute] = useState();
   const ref = useRef(null);
 
   const downloadPresentationTemplate = () => {
-    setContentRoute(null)
+    setContentRoute(null);
     var a = document.createElement("a");
     a.href = presentationTemplate;
     a.setAttribute("download", "Template.pptx");
@@ -63,7 +64,9 @@ const Main = () => {
     <div id="main">
       <Paper style={styles.paperContainer}>
         <Typography className="title">רסיסי לילה</Typography>
-        <Typography className="sub-title">העתיד שלכם בידיים שלנו • השלמה טכנולוגית 005</Typography>
+        <Typography className="sub-title">
+          העתיד שלכם בידיים שלנו • השלמה טכנולוגית 005
+        </Typography>
       </Paper>
       <Paper className="main-tabs" style={{ backgroundColor: "transparent" }}>
         <Avatar onClick={() => scroll(50)} className="arrow">
@@ -117,15 +120,16 @@ const Main = () => {
             startIcon={<DescriptionIcon />}
           >
             תמיכה טכנית Openshift
-          </Button>          
-          {/*<Button
-            onClick={() => setContentRoute(null)}
+          </Button>
+          {/*    <Button
+            onClick={() => setContentRoute(ContentRoutes.Team)}
             variant="contained"
             className="tab-button"
-            startIcon={<RecentActorsIcon />}
+            startIcon={<GroupIcon />}
           >
             הצוות
-          </Button>
+          </Button> */}
+          {/*}
           <Button
             onClick={() => setContentRoute(null)}
             variant="contained"
@@ -133,15 +137,15 @@ const Main = () => {
             startIcon={<RecentActorsIcon />}
           >
             מערכות
-          </Button>
+       </Button>*/}
           <Button
-            onClick={() => setContentRoute(null)}
+            onClick={() => setContentRoute(ContentRoutes.Pics)}
             variant="contained"
             className="tab-button"
-            startIcon={<RecentActorsIcon />}
+            startIcon={<PhotoLibraryIcon />}
           >
-            מערכות
-          </Button>*/}
+            גלריה
+          </Button>
         </div>
         <Avatar onClick={() => scroll(-50)} className="arrow">
           <ArrowBackIosIcon />

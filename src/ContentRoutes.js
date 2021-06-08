@@ -1,7 +1,9 @@
 const ContentRoutes = {
   CommonProblems: "CommonProblems",
   TechPicks: "TechPicks",
-  HeirarchyTree: "HeirarchyTree"
+  HeirarchyTree: "HeirarchyTree",
+  Team: 'Team',
+  Pics: 'Pics'
 };
 
 export default ContentRoutes;

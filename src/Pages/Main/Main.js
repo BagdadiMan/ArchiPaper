@@ -26,6 +26,7 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import Content from "../../Components/Content/Content.js";
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const styles = {
   paperContainer: {
@@ -76,6 +77,22 @@ const Main = () => {
             startIcon={<WarningIcon fontSize={"large"} />}
           >
             תקלות נפוצות
+          </Button>          
+          <Button
+            onClick={downloadPresentationTemplate}
+            variant="contained"
+            className="tab-button"
+            startIcon={<SlideshowIcon />}
+          >
+            פורמט הצגות
+          </Button>
+          <Button
+            onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
+            variant="contained"
+            className="tab-button"
+            startIcon={<AccountTreeIcon fontSize={"large"} />}
+          >            
+            עץ מוצר
           </Button>
           <Button
             onClick={() =>
@@ -90,21 +107,17 @@ const Main = () => {
             מדריכי Openshift
           </Button>
           <Button
-            onClick={downloadPresentationTemplate}
+            onClick={() =>
+              window.open(
+                "https://forms.gle/25GwaS94Mj9WLmMc9"
+              )
+            }
             variant="contained"
             className="tab-button"
-            startIcon={<SlideshowIcon />}
+            startIcon={<DescriptionIcon />}
           >
-            פורמט הצגות
-          </Button>
-          <Button
-            onClick={() => setContentRoute(ContentRoutes.HeirarchyTree)}
-            variant="contained"
-            className="tab-button"
-            startIcon={<AccountTreeIcon fontSize={"large"} />}
-          >
-            עץ מוצר
-          </Button>
+            תמיכה טכנית Openshift
+          </Button>          
           {/*<Button
             onClick={() => setContentRoute(null)}
             variant="contained"

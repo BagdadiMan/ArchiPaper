@@ -61,9 +61,19 @@ const initialElements = [
         position: { x: -200, y: 268 }
     },
     {
+        id: 'GoldView',
+        data: { label: <span style={clickableStyle}>Gold View</span>, ref: 'http://gold-view-client-goldview.apps.openforce.openforce.biz/#/'},
+        position: { x: -375, y: 268 }
+    },
+    {
         id: 'זהר',
         data: { label: 'זהר - ארכיטקטית רשת'},
         position: { x: -200, y: 225 }
+    },
+    {
+        id: 'GoldControl',
+        data: { label: 'Gold Control'},
+        position: { x: -375, y: 225 }
     },
     {
         id: 'רועי',

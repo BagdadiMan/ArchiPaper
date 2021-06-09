@@ -153,7 +153,7 @@ const initialElements = [
     },
     {
         id: 'חמל1',
-        data: { label: 'תחנת משטרה'},
+        data: { label: <span style={clickableStyle}>תחנת משטרה</span>, ref: 'http://police-site-client-git2-securityapp1.apps.openforce.openforce.biz/#/'},
         position: { x: 800, y: 250 },
         style: { width: 100}
     }, 
@@ -165,7 +165,7 @@ const initialElements = [
     },
     {
         id: 'חמל2',
-        data: { label: 'תחנת משטרה'},
+        data: { label: <span style={clickableStyle}>תחנת משטרה</span>, ref: 'http://police-station-app-git1-securityapp2.apps.openforce.openforce.biz/'},
         position: { x: 925, y: 250 },
         style: { width: 100}
     },
@@ -177,7 +177,7 @@ const initialElements = [
     },
     {
         id: 'da3',
-        data: { label: 'Data Analyst'},
+        data: { label: <span style={clickableStyle}>Data Analyst</span>, ref: 'http://da-legend-git-tmzapp1.apps.openforce.openforce.biz/#/'},
         position: { x: 1450, y: 250 },
         style: { width: 100}
     },
@@ -189,7 +189,7 @@ const initialElements = [
     },
     {
         id: 'da1',
-        data: { label: 'Data Analyst'},
+        data: { label: <span style={clickableStyle}>Data Analyst</span>, ref: 'http://mercury-git-tmzde3.apps.openforce.openforce.biz/#/'},
         position: { x: 1200, y: 250 },
         style: { width: 100}
     },
@@ -201,8 +201,20 @@ const initialElements = [
     },
     {
         id: 'מפה1',
-        data: { label: 'מפה'},
+        data: { label: <span style={clickableStyle}>מפה - תחנת משטרה</span>, ref: 'http://map3-service-tmzmap3.apps.openforce.openforce.biz/#/icontrolweb'},
         position: { x: 1200, y:  336},
+        style: { width: 100}
+    },
+    {
+        id: 'מפה4',
+        data: { label: <span style={clickableStyle}>מפה - אפליקציה לשוטר</span>, ref: 'http://map3-service-tmzmap3.apps.openforce.openforce.biz/#/icontrolmobile'},
+        position: { x: 1200, y:  394},
+        style: { width: 100}
+    },
+    {
+        id: 'מפה5',
+        data: { label: <span style={clickableStyle}>מפה - הערכת מצב</span>, ref: 'http://map3-service-tmzmap3.apps.openforce.openforce.biz/#/brain'},
+        position: { x: 1200, y:  452},
         style: { width: 100}
     },
     {
@@ -225,7 +237,7 @@ const initialElements = [
     },
     {
         id: 'חמל3',
-        data: { label: 'תחנת משטרה'},
+        data: { label: <span style={clickableStyle}>תחנת משטרה</span>, ref: 'http://frontend-siton-dev-securityapp3.apps.openforce.openforce.biz/'},
         position: { x: 1050, y: 250 },
         style: { width: 100}
     },
@@ -238,7 +250,7 @@ const initialElements = [
     },
     {
         id: 'מפה3',
-        data: { label: 'מפה'},
+        data: { label: <span style={clickableStyle}>מפה</span>, ref: 'http://maps-legend-git-tmzmap1.apps.openforce.openforce.biz/#/MapAmatz'},
         position: { x: 1450, y:  336},
         style: { width: 100}
     },
